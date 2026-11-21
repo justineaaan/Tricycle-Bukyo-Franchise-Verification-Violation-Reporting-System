@@ -1,0 +1,305 @@
+.pa-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* TITLE AREA */
+.pa-crumb {
+  margin: 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.pa-crumb span {
+  margin: 0 4px;
+}
+
+.pa-crumb b {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.pa-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.pa-sub {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* TWO COLUMNS */
+.pa-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 16px;
+  align-items: start;
+}
+
+/* CARD */
+.pa-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.pa-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+}
+
+.pa-card-head p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.pa-card-body {
+  padding: 20px;
+}
+
+/* SEARCH BOX */
+.pa-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #64748b;
+}
+
+.pa-search input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+/* LIST (this part scrolls) */
+.pa-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 460px;
+  margin-top: 14px;
+  padding-right: 6px;
+  overflow-y: auto;
+}
+
+.pa-list-empty {
+  margin: 24px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.pa-item {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  text-align: left;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.pa-item:hover {
+  background: #f8fafc;
+}
+
+.pa-item.selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.pa-item-icon {
+  color: #f59e0b;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.pa-item-ticket {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pa-item-meta {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.pa-item-amount {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: #1d4ed8;
+}
+
+/* EMPTY STATE (nothing selected) */
+.pa-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 24px;
+  text-align: center;
+}
+
+.pa-empty-icon {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #475569;
+  display: grid;
+  place-items: center;
+}
+
+.pa-empty-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pa-empty-text {
+  max-width: 360px;
+  margin: 6px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+/* SUMMARY BOX */
+.pa-summary {
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.pa-summary-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.pa-summary-ticket {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pa-tag {
+  padding: 2px 10px;
+  border-radius: 6px;
+  background: #fef3c7;
+  color: #b45309;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pa-summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 24px;
+  margin-top: 14px;
+}
+
+.pa-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #64748b;
+}
+
+.pa-info-label {
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  color: #64748b;
+}
+
+.pa-info-value {
+  margin: 2px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* FORM */
+.pa-card-body > label {
+  display: block;
+  margin: 20px 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pa-card-body > input,
+.pa-card-body > textarea {
+  width: 100%;
+  padding: 0 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.pa-card-body > input {
+  height: 40px;
+}
+
+.pa-card-body > textarea {
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.pa-save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 42px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #1d4ed8;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pa-save:hover {
+  background: #1e40af;
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 1000px) {
+  .pa-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .pa-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

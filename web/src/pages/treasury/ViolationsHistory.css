@@ -1,0 +1,181 @@
+.vh-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* TITLE AREA */
+.vh-crumb {
+  margin: 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.vh-crumb span {
+  margin: 0 4px;
+}
+
+.vh-crumb b {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.vh-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.vh-sub {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* CARD */
+.vh-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+/* SEARCH + STATUS */
+.vh-filters {
+  display: grid;
+  grid-template-columns: 1fr 375px;
+  gap: 16px;
+  padding: 20px;
+}
+
+.vh-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vh-field label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #475569;
+}
+
+.vh-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #64748b;
+}
+
+.vh-search input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+.vh-field select {
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+}
+
+/* RECORD COUNT */
+.vh-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 12px;
+  color: #475569;
+}
+
+/* TABLE (scrolls sideways on small screens) */
+.vh-table-wrap {
+  overflow-x: auto;
+}
+
+.vh-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.vh-table th {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.vh-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  white-space: nowrap;
+}
+
+.vh-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.vh-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.vh-ticket {
+  font-weight: 600;
+}
+
+.vh-muted {
+  color: #64748b;
+}
+
+.vh-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.vh-amount {
+  font-weight: 600;
+}
+
+.vh-empty {
+  padding: 40px 16px !important;
+  text-align: center;
+  color: #64748b;
+}
+
+/* STATUS BADGES */
+.vh-badge {
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.vh-badge.unpaid { background: #fee2e2; color: #b91c1c; }
+.vh-badge.paid { background: #d1fae5; color: #047857; }
+.vh-badge.partial { background: #fef3c7; color: #b45309; }
+
+/* SMALLER SCREENS */
+@media (max-width: 700px) {
+  .vh-filters {
+    grid-template-columns: 1fr;
+  }
+}
