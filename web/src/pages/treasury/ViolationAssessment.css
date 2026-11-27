@@ -1,0 +1,293 @@
+.va-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* TITLE AREA */
+.va-crumb {
+  margin: 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.va-crumb span {
+  margin: 0 4px;
+}
+
+.va-crumb b {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.va-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.va-sub {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* TWO COLUMNS */
+.va-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 16px;
+  align-items: start;
+}
+
+/* CARD */
+.va-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.va-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+}
+
+.va-card-head p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.va-card-body {
+  padding: 20px;
+}
+
+/* SEARCH BOX */
+.va-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #64748b;
+}
+
+.va-search input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+/* LIST (this part scrolls) */
+.va-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 460px;
+  margin-top: 14px;
+  padding-right: 6px;
+  overflow-y: auto;
+}
+
+.va-list-empty {
+  margin: 24px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.va-item {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  text-align: left;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.va-item:hover {
+  background: #f8fafc;
+}
+
+.va-item.selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.va-item-icon {
+  color: #2563eb;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.va-item-ticket {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.va-item-meta {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.va-item-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.va-item-amount {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* STATUS BADGES */
+.va-badge {
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.va-badge.unpaid { background: #fee2e2; color: #b91c1c; }
+.va-badge.paid { background: #d1fae5; color: #047857; }
+.va-badge.partial { background: #fef3c7; color: #b45309; }
+
+/* EMPTY STATE (nothing selected) */
+.va-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 24px;
+  text-align: center;
+}
+
+.va-empty-icon {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #475569;
+  display: grid;
+  place-items: center;
+}
+
+.va-empty-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.va-empty-text {
+  max-width: 360px;
+  margin: 6px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+/* DETAILS */
+.va-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.va-detail {
+  padding: 12px;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.va-detail.wide {
+  grid-column: 1 / -1;
+}
+
+.va-detail-label {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #64748b;
+}
+
+.va-detail-value {
+  margin: 4px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* SETTLEMENT FORM */
+.va-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.va-form-title {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.va-form label {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.va-form select,
+.va-form input {
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.va-save {
+  align-self: flex-start;
+  height: 38px;
+  margin-top: 14px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 8px;
+  background: #1d4ed8;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.va-save:hover {
+  background: #1e40af;
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 1000px) {
+  .va-grid {
+    grid-template-columns: 1fr;
+  }
+}
